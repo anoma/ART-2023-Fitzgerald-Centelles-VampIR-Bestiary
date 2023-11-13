@@ -1,0 +1,49 @@
+% MACROS
+
+\newcommand{\proves}{\ensuremath{\vdash}}
+\newcommand{\Mc}{\ensuremath{\mathcal{M}}}
+\newcommand{\Bc}{\ensuremath{\mathcal{B}}}
+\newcommand{\Cc}{\ensuremath{\mathcal{C}}}
+\newcommand{\Ic}{\ensuremath{\mathcal{I}}}
+\newcommand{\Fc}{\ensuremath{\mathcal{F}}}
+\newcommand{\Tc}{\ensuremath{\mathcal{T}}}
+\newcommand{\Pc}{\ensuremath{\mathcal{P}}}
+\newcommand{\Vc}{\ensuremath{\mathcal{V}}}
+\newcommand{\xpause}{\vspace*{-\baselineskip}\pause}
+\newcommand{\dom}{\mathrm{dom}}
+\newcommand{\FV}{\mathrm{FV}}
+\newcommand{\Type}{\mathrm{Type}}
+\newcommand{\To}{\Rightarrow}
+\newcommand{\da}{{\downarrow}}
+\newcommand{\Da}{{\Downarrow}}
+\newcommand{\eval}[3]{\ensuremath{#1\To_{#2} #3}}
+\newcommand{\valuation}[3]{\ensuremath{\llbracket#1\rrbracket_{#2}^{#3}}}
+\newcommand{\transl}[1]{\ensuremath{\lceil#1\rceil}}
+\newcommand{\id}{\mathtt{id}}
+\newcommand{\Nbb}{\mathbb{N}}
+
+\newcommand{\eps}{\varepsilon}
+
+\newcommand{\JuvixCore}{\ensuremath{\mathsf{JuvixCore}}}
+\newcommand{\Geb}{\ensuremath{\mathsf{Geb}\,}}
+\newcommand{\Juvix}{\ensuremath{\mathsf{Juvix}}}
+\newcommand{\VampIR}{\ensuremath{\mathsf{VampIR}}}
+\newcommand{\LambdaIR}{\ensuremath{\mathsf{Lambda}}}
+
+\newcommand{\op}{\ensuremath{\mathtt{op}}}
+\newcommand{\slet}[2]{\mathtt{let}\,#1\,\mathtt{in}\,#2}
+\newcommand{\sletrec}[2]{\mathtt{letrec}\,#1\,\mathtt{in}\,#2}
+\newcommand{\scase}[2]{\mathtt{case}\,#1\,\mathtt{of}\,#2}
+\newcommand{\Int}{\mathrm{Int}}
+\newcommand{\Bool}{\mathrm{Bool}}
+\newcommand{\String}{\mathrm{String}}
+\newcommand{\Dynamic}{\bigstar}
+\newcommand{\true}{\mathtt{true}}
+\newcommand{\false}{\mathtt{false}}
+\newcommand{\closure}[2]{\langle #1; #2 \rangle}
+
+\newcommand{\codeblock}[1]{
+    \begin{minted}{javascript}
+    #1
+    \end{minted}
+}
