@@ -15,7 +15,7 @@
 
 \section{Introduction}
 
-Intermediate representations (IRs) can be seen as a generalisation of arithmetic circuits. Popular IRs today are Rank-$1$ Constraint System (R1CS), Algebraic Intermediate Representation (AIR) and Plonkish.
+Intermediate representations (IRs) can be seen as a generalisation of arithmetic circuits. Popular IRs today are Rank-$1$ Constraint System (R1CS), Algebraic Intermediate Representation (AIR) and Plonkish\cite{plonkish-arithmetisation}.
 
 The current Vamp-IR implementation consists of:
 \begin{enumerate}
@@ -198,7 +198,7 @@ A \textbf{universal} IR means that there is a direct transformation from it to a
          \item Can be very constraint efficient if partial evaluation targets backend gadgets
      \end{itemize} & 
      \begin{itemize} \setlength{\itemindent}{-1.5em}
-         \item Potentially universal but mappings to other IRs must be carefully constructed (see CCS paper for further details)
+         \item Potentially universal but mappings to other IRs must be carefully constructed (see CCS paper \cite{cryptoeprint:2023/552} for further details)
      \end{itemize} 
      \\
      \hline
@@ -218,7 +218,7 @@ A \textbf{universal} IR means that there is a direct transformation from it to a
 
 \subsection{IRs which are close to a proof system}
 \begin{itemize}
-\item \textbf{Plonkish}: For use in any Plonk-based proof system, including Halo2. Proof system implementations which are Plonk-based include: 
+\item \textbf{Plonkish}: For use in any Plonk-based\cite{cryptoeprint:2019/953} proof system, including Halo2 \cite{halo2-repo}. Proof system implementations which are Plonk-based include: 
     \begin{itemize}
         \item zk-garage/plonk 
         \item zcash/halo2 
@@ -229,7 +229,7 @@ A \textbf{universal} IR means that there is a direct transformation from it to a
     \begin{itemize}
         \item facebook/winterfell
     \end{itemize}
-\item \textbf{R1CS}: For use in the Groth16, Marlin and Nova proof systems. Proof system implementations using R1CS include:
+\item \textbf{R1CS}: For use in the Groth16 \cite{cryptoeprint:2016/260}, Marlin \cite{cryptoeprint:2019/1047} and Nova \cite{cryptoeprint:2021/370} proof systems. Proof system implementations using R1CS include:
     \begin{itemize}
         \item zcash/bellman
         \item scipr-lab/libsnark 
