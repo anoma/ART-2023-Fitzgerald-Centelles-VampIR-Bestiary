@@ -53,10 +53,12 @@ Auxiliary data may be derived from an IR and included in the module to assist in
 \subsection{Flattening}
 
 \textit{Flattening} is the process by which constraints are broken down into a list of smaller constraints by adding auxiliary variables. Flattening increases the total number of constraints. For example, the constraint $$d = a\times(b+c)$$ can be flattened to 
-\begin{multline*}
+\begin{equation*}
+    \begin{split}
     & v_1 = b + c \\
     & d = a\times v_1
-\end{multline*}
+    \end{split}
+\end{equation*}
 by adding the auxiliary variable $v_1$.
 
 \subsection{Unflattening (elimination)}
